@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@100&display=swap');
+* {
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  color: red;
+}
 .header {
   display: flex;
   flex-direction: column; /* Coloca los elementos en columna */
@@ -14,7 +19,7 @@
 
 .header-title {
   color:#ff0000;
-  font-size: 2em; /* Ajusta el tamaño de la fuente si es necesario */
+  font-size: 3em; /* Ajusta el tamaño de la fuente si es necesario */
   text-align: left;
   margin: 0;
   line-height: 0.9; /* Ajusta el espacio entre las líneas si es necesario */
@@ -22,7 +27,7 @@
 
 .sello {
   color: #ff0000;
-  font-size: 1.5em; /* Ajusta el tamaño de la fuente si es necesario */
+  font-size: 1.2em; /* Ajusta el tamaño de la fuente si es necesario */
   text-align: right;
   margin: 0;
   line-height: 0.9; /* Ajusta el espacio entre las líneas si es necesario */
@@ -55,7 +60,8 @@
 }
 .works {
   padding: 20px;
-  display: flexbox;
+  display: flex;
+  justify-content: center;
 }
 
 .media-grid {
@@ -63,8 +69,10 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
   list-style: none;
-  padding: 20;
-  margin: 20;
+  padding: 0;
+  margin: 0;
+  max-width: 1200px; /* Ajusta esto según el ancho máximo deseado */
+  width: 100%;
 }
 
 .media-item {
@@ -82,10 +90,76 @@
 .media-item h3, .media-item p {
   display: none;
 }
+.contacto {
+  padding: 10px;
+ 
+  margin-top: 100px;
+}
 .mail{
   color: #ff0000;
   font-size: 3.5em; /* Ajusta el tamaño de la fuente si es necesario */
-  text-align: center;
+  text-align: centerx ;
   margin: 0;
 
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-title {
+    font-size: 2em;
+  }
+
+  .sello {
+    font-size: 1em;
+    margin-top: 10px;
+  }
+
+  .header-nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .header-nav ul li a {
+    font-size: 1em;
+  }
+
+  .works, .street {
+    padding: 10px;
+  }
+
+  .media-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .media-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .media-item h3, .media-item p {
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  .contacto {
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .mail {
+    font-size: 1.5em;
+  }
 }

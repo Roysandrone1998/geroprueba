@@ -119,7 +119,7 @@ function Street() {
 
     return (
         <section className="works">
-            <h2>Galería de Fotos</h2>
+
             <ul className="media-grid">
                 {photos.map(photo => (
                     <li key={photo.id} className="media-item">
