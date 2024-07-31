@@ -10,6 +10,13 @@ import Foto8 from '../img/Work/10.jpg';
 import Foto9 from '../img/Work/11.jpg';
 import Foto10 from '../img/Work/22.jpg';
 import Foto11 from '../img/Work/12.jpg';
+import Foto12 from '../img/Work/24.jpg';
+import Foto13 from '../img/Work/15.jpg';
+import Foto14 from '../img/Work/17.jpg';
+import Foto15 from '../img/Work/18.jpg';
+import Foto16 from '../img/Work/19.jpg';
+import Foto17 from '../img/Work/21.jpg';
+import Foto18 from '../img/Work/W.jpg';
 
 function Works() {
     const photos = [
@@ -82,42 +89,42 @@ function Works() {
             id: 2,
             nombre: "Foto 2",
             descripcion: "MINATO",
-            url: Foto1
+            url: Foto12
         },
         {
             id: 3,
             nombre: "Foto 3",
             descripcion: "MINATO",
-            url: Foto1
+            url: Foto13
         },
         {
             id: 4,
             nombre: "Foto 4",
             descripcion: "MINATO",
-            url: Foto1
+            url: Foto14
         },
         {
             id: 5,
             nombre: "Foto 5",
             descripcion: "MINATO",
-            url: Foto1
+            url: Foto15
         }, {
             id: 1,
             nombre: "Foto 1",
             descripcion: "MINATO",
-            url: Foto1
+            url: Foto16
         },
         {
             id: 2,
             nombre: "Foto 2",
             descripcion: "MINATO",
-            url: Foto1
+            url: Foto17
         },
         {
             id: 3,
             nombre: "Foto 3",
             descripcion: "MINATO",
-            url: Foto1
+            url: Foto18
         },
         // Agrega más fotos aquí
     ];

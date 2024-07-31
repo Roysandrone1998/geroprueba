@@ -8,7 +8,7 @@
   flex-direction: column; /* Coloca los elementos en columna */
   align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
   padding: 20px;
-  background-color: #ffffff; /* Ajusta el color de fondo si es necesario */
+
 }
 
 .header-top {
@@ -18,7 +18,6 @@
 }
 
 .header-title {
-  color:#ff0000;
   font-size: 3em; /* Ajusta el tamaño de la fuente si es necesario */
   text-align: left;
   margin: 0;
@@ -26,11 +25,11 @@
 }
 
 .sello {
-  color: #ff0000;
-  font-size: 1.2em; /* Ajusta el tamaño de la fuente si es necesario */
+  font-size: 1.4em; /* Ajusta el tamaño de la fuente si es necesario */
   text-align: right;
   margin: 0;
   line-height: 0.9; /* Ajusta el espacio entre las líneas si es necesario */
+  font-weight: 100; 
 }
 
 .header-nav {
@@ -51,7 +50,7 @@
 
 .header-nav ul li a {
   text-decoration: none;
-  color: #ff0000; /* Ajusta el color del texto si es necesario */
+
   font-size: 1em; /* Ajusta el tamaño de la fuente si es necesario */
 }
 
@@ -92,14 +91,13 @@
 }
 .contacto {
   padding: 10px;
- 
   margin-top: 100px;
 }
 .mail{
-  color: #ff0000;
+
   font-size: 3.5em; /* Ajusta el tamaño de la fuente si es necesario */
-  text-align: centerx ;
-  margin: 0;
+  text-align: center ;
+  margin-top: 30;
 
 }
 @media only screen and (max-width: 768px) {

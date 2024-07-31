@@ -4,7 +4,19 @@ import Foto2 from '../img/street/2.jpg';
 import Foto3 from '../img/street/7.jpg';
 import Foto4 from '../img/street/15.jpg';
 import Foto5 from '../img/street/16.jpg';
-import Foto6 from '../img/street/46.jpg';
+import Foto6 from '../img/street/47.jpg';
+import Foto7 from '../img/street/46.jpg';
+import Foto8 from '../img/street/61.jpg';
+import Foto9 from '../img/street/27.jpg';
+import Foto10 from '../img/street/31.jpg';
+import Foto11 from '../img/street/57.jpg';
+import Foto12 from '../img/street/58.jpg';
+import Foto13 from '../img/street/50.jpg';
+import Foto14 from '../img/street/24.jpg';
+import Foto15 from '../img/street/20.jpg';
+import Foto16 from '../img/street/49.jpg';
+import Foto17 from '../img/street/ 9.jpg';
+
 
 function Street() {
     const photos = [
@@ -48,72 +60,67 @@ function Street() {
             id: 2,
             nombre: "Foto 2",
             descripcion: "MINATO",
-            url: Foto1
+            url: Foto7
         },
         {
             id: 3,
             nombre: "Foto 3",
             descripcion: "MINATO",
-            url: Foto1
+            url: Foto8
         },
         {
             id: 4,
             nombre: "Foto 4",
             descripcion: "MINATO",
-            url: Foto1
+            url: Foto9
         },
         {
             id: 5,
             nombre: "Foto 5",
             descripcion: "MINATO",
-            url: Foto1
+            url: Foto10
         }, {
             id: 1,
             nombre: "Foto 1",
             descripcion: "MINATO",
-            url: Foto1
+            url: Foto11
         },
         {
             id: 2,
             nombre: "Foto 2",
             descripcion: "MINATO",
-            url: Foto1
+            url: Foto12
         },
         {
             id: 3,
             nombre: "Foto 3",
             descripcion: "MINATO",
-            url: Foto1
+            url: Foto13
         },
         {
             id: 4,
             nombre: "Foto 4",
             descripcion: "MINATO",
-            url: Foto1
+            url: Foto14
         },
         {
             id: 5,
             nombre: "Foto 5",
             descripcion: "MINATO",
-            url: Foto1
+            url: Foto15
         }, {
             id: 1,
             nombre: "Foto 1",
             descripcion: "MINATO",
-            url: Foto1
+            url: Foto16
         },
         {
             id: 2,
             nombre: "Foto 2",
             descripcion: "MINATO",
-            url: Foto1
+            url: Foto17
         },
-        {
-            id: 3,
-            nombre: "Foto 3",
-            descripcion: "MINATO",
-            url: Foto1
-        },
+
 
     ];
 
