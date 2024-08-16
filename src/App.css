@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@100&display=swap');
+
 * {
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
   color: red;
@@ -30,6 +31,10 @@
   margin: 0;
   line-height: 0.9; /* Ajusta el espacio entre las líneas si es necesario */
   font-weight: 100; 
+}
+.sello h2{
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400; /* 400 es el peso para "Regular" */
 }
 
 .header-nav {
@@ -94,13 +99,37 @@
   margin-top: 100px;
 }
 .mail{
-
+  @import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@700&display=swap');
   font-size: 3.5em; /* Ajusta el tamaño de la fuente si es necesario */
   text-align: center ;
   margin-top: 30;
 
+
 }
 @media only screen and (max-width: 768px) {
+  .media-item {
+    /* Ajusta el tamaño de las miniaturas para pantallas pequeñas */
+    width: 100%;
+    /* Otros ajustes específicos para pantallas pequeñas */
+}
+
+.thumbnail {
+    /* Ajusta el tamaño de la imagen en miniatura para pantallas pequeñas */
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    /* Asegúrate de que el overlay ocupe toda la pantalla */
+    width: 100vw;
+    height: 100vh;
+}
+
+.enlarged-img {
+    /* Ajusta el tamaño máximo de la imagen ampliada para pantallas pequeñas */
+    max-width: 95%;
+    max-height: 95%;
+}
   .header {
     padding: 10px;
     flex-direction: column;
@@ -116,7 +145,10 @@
     font-size: 1em;
     margin-top: 10px;
   }
-
+  .sello h2{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: 400; /* 400 es el peso para "Regular" */
+  }
   .header-nav ul {
     flex-direction: column;
     align-items: center;
@@ -143,7 +175,7 @@
   .media-item img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    
   }
 
   .media-item h3, .media-item p {
@@ -160,4 +192,35 @@
   .mail {
     font-size: 1.5em;
   }
+}
+
+.media-item {
+  cursor: pointer;
+  position: relative;
+}
+
+.thumbnail {
+  transition: transform 0.3s ease;
+}
+
+.enlarged {
+  transform: scale(1.5);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.enlarged-img {
+  max-width: 90%;
+  max-height: 90%;
 }
