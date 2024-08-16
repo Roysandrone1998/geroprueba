@@ -21,7 +21,7 @@
 .header-title {
   font-size: 3em; /* Ajusta el tamaño de la fuente si es necesario */
   text-align: left;
-  margin: 0;
+  margin: 50;
   line-height: 0.9; /* Ajusta el espacio entre las líneas si es necesario */
 }
 
@@ -38,7 +38,15 @@
 }
 
 .header-nav {
-  margin-top: 10px; /* Añade espacio entre el h1 y la navegación */
+  margin-top: 100px; /* Añade espacio entre el h1 y la navegación */
+  border-top: 3px solid red; /* Línea roja arriba */
+  border-bottom: 3px solid red; /* Línea roja abajo */
+  padding: 50 550px; /* Padding de 650px a los lados */
+  box-sizing: border-box; /* Incluye padding en el ancho total */
+  width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
+  max-width: 100%; /* Evita que el ancho supere el tamaño del contenedor */
+  margin: 0 auto; /* Centra el contenedor en la pantalla */; /* Ajusta el espacio vertical */
+
 }
 
 .header-nav ul {
@@ -50,7 +58,7 @@
 }
 
 .header-nav ul li {
-  display: inline;
+  display: inine;
 }
 
 .header-nav ul li a {
@@ -98,13 +106,12 @@
   padding: 10px;
   margin-top: 100px;
 }
-.mail{
-  @import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@700&display=swap');
-  font-size: 3.5em; /* Ajusta el tamaño de la fuente si es necesario */
-  text-align: center ;
-  margin-top: 30;
-
-
+.mail {
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 3.5em;
+  text-align: center;
+  margin-top: 30px;
 }
 @media only screen and (max-width: 768px) {
   .media-item {
