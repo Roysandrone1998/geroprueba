@@ -157,7 +157,7 @@
     font-weight: 400; /* 400 es el peso para "Regular" */
   }
   .header-nav ul {
-    flex-direction: column;
+    display: flex;
     align-items: center;
     gap: 10px;
   }
