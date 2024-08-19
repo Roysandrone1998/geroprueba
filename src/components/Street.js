@@ -21,6 +21,7 @@ import Foto17 from '../img/street/ 9.jpg';
 function Street() {
     const [selectedImgId, setSelectedImgId] = useState(null);
 
+
     const photos = [
         { id: 1, nombre: "Foto 1", descripcion: "MINATO", url: Foto1 },
         { id: 2, nombre: "Foto 2", descripcion: "MINATO", url: Foto2 },
@@ -52,11 +53,12 @@ function Street() {
         <section className="works">
             <ul className="media-grid">
                 {photos.map(photo => (
-                    <li key={photo.id} className="media-item" onClick={() => handleImageClick(photo.id)}>
+                    <li key={photo.id} className="media-item">
                         <img 
                             src={photo.url} 
                             alt={photo.nombre} 
                             className={`thumbnail ${selectedImgId === photo.id ? 'enlarged' : ''}`}
+                            onClick={() => handleImageClick(photo.id)}
                         />
                         <h3>{photo.nombre}</h3>
                         <p>{photo.descripcion}</p>
@@ -76,5 +78,6 @@ function Street() {
         </section>
     );
 }
+
 
 export default Street;

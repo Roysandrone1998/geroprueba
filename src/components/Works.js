@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Foto1 from '../img/Work/1.jpg';
 import Foto2 from '../img/Work/2.jpg';
 import Foto3 from '../img/Work/3.jpg';
@@ -19,6 +19,7 @@ import Foto17 from '../img/Work/21.jpg';
 import Foto18 from '../img/Work/W.jpg';
 
 function Works() {
+    const [selectedImgId, setSelectedImgId] = useState(null);
     const photos = [
         {
             id: 1,
@@ -51,96 +52,118 @@ function Works() {
             url: Foto5
         },
         {
-            id: 1,
-            nombre: "Foto 1",
+            id: 6,
+            nombre: "Foto 6",
             descripcion: "MINATO",
             url: Foto6
         },
         {
-            id: 2,
-            nombre: "Foto 2",
+            id: 7,
+            nombre: "Foto 7",
             descripcion: "MINATO",
             url: Foto7
         },
         {
-            id: 3,
-            nombre: "Foto 3",
+            id: 8,
+            nombre: "Foto 8",
             descripcion: "MINATO",
             url: Foto8
         },
         {
-            id: 4,
-            nombre: "Foto 4",
+            id: 9,
+            nombre: "Foto 9",
             descripcion: "MINATO",
             url: Foto9
         },
         {
-            id: 5,
-            nombre: "Foto 5",
+            id: 10,
+            nombre: "Foto 10",
             descripcion: "MINATO",
             url: Foto10
-        }, {
-            id: 1,
-            nombre: "Foto 1",
+        }, 
+        {
+            id: 11,
+            nombre: "Foto 11",
             descripcion: "MINATO",
             url: Foto11
         },
         {
-            id: 2,
-            nombre: "Foto 2",
+            id: 12,
+            nombre: "Foto 12",
             descripcion: "MINATO",
             url: Foto12
         },
         {
-            id: 3,
-            nombre: "Foto 3",
+            id: 13,
+            nombre: "Foto 13",
             descripcion: "MINATO",
             url: Foto13
         },
         {
-            id: 4,
-            nombre: "Foto 4",
+            id: 14,
+            nombre: "Foto 14",
             descripcion: "MINATO",
             url: Foto14
         },
         {
-            id: 5,
-            nombre: "Foto 5",
+            id: 15,
+            nombre: "Foto 15",
             descripcion: "MINATO",
             url: Foto15
-        }, {
-            id: 1,
-            nombre: "Foto 1",
+        }, 
+        {
+            id: 16,
+            nombre: "Foto 16",
             descripcion: "MINATO",
             url: Foto16
         },
         {
-            id: 2,
-            nombre: "Foto 2",
+            id: 17,
+            nombre: "Foto 17",
             descripcion: "MINATO",
             url: Foto17
         },
         {
-            id: 3,
-            nombre: "Foto 3",
+            id: 18,
+            nombre: "Foto 18",
             descripcion: "MINATO",
             url: Foto18
         },
         // Agrega más fotos aquí
     ];
 
+    const handleImageClick = (id) => {
+        setSelectedImgId(selectedImgId === id ? null : id);
+    };
+
+    const handleOverlayClick = () => {
+        setSelectedImgId(null);
+    };
     return (
         <section className="works">
-
             <ul className="media-grid">
                 {photos.map(photo => (
-                    <li key={photo.id} className="media-item">
-                        <img src={photo.url} alt={photo.nombre} />
+                    <li key={photo.id} className="media-item" onClick={() => handleImageClick(photo.id)}>
+                        <img 
+                            src={photo.url} 
+                            alt={photo.nombre} 
+                            className={`thumbnail ${selectedImgId === photo.id ? 'enlarged' : ''}`}
+                        />
                         <h3>{photo.nombre}</h3>
                         <p>{photo.descripcion}</p>
                     </li>
                 ))}
             </ul>
+
+            {selectedImgId && (
+                <div className="overlay" onClick={handleOverlayClick}>
+                    <img 
+                        src={photos.find(photo => photo.id === selectedImgId).url} 
+                        alt="Imagen Ampliada"
+                        className="enlarged-img"
+                    />
+                </div>
+            )}
         </section>
     );
 }
